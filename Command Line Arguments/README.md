@@ -27,7 +27,7 @@ Here,
   
 ## For example:
 
-```c++
+```c
 #include<stdio.h>
 
 int main(int argc, char *argv[]) {
@@ -45,7 +45,7 @@ int main(int argc, char *argv[]) {
 
 compile this code on your Linux machine. 
 
-    gcc filename.c
+    gcc main.c
 
 and run. 
 
