@@ -50,6 +50,7 @@ compile and run the above code:
 ```
 
 **output**
+
 ![alt text](image.png)
 
 ## execv() System Call:
@@ -93,6 +94,7 @@ compile and run the above code:
 ```
 
 **output**
+
 ![alt text](image-1.png)
 
 when you enter invalid path:
@@ -101,6 +103,7 @@ when you enter invalid path:
     ./exec /usr/bin/invaild
 ```
 **output**
+
 ![alt text](image-2.png)
 
 ## wait() System Call:
