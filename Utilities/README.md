@@ -62,7 +62,7 @@ a simple implementation of cat command
 - Command-Line Argument:
     - accepts multiple filenames as arguments.
     - Treat the special filename - as standard input.
--  Read from Standard Input:
+- Read from Standard Input:
     - If no filenames are provided, read from stdin.
 - Error Handling:
     - Print meaningful error messages to stderr using `fprintf()`.
@@ -74,6 +74,27 @@ gcc mycat.c -o mycat
 ./mycat filename
 ```
 
+
+## pwd:
+pwd - print name of current/working directory
+
+### How It works?
+it uses the `getcwd()` library function that returns a null-terminated string containing an absolute pathname that is the current  working  directory  of the  calling  process.
+
+```c
+#include <unistd.h>
+
+char *getcwd(char *buf, size_t size);
+```
+**RETURN VALUE**
+On success, It returns a pointer to a string containing  the  pathname  of the current working directory.
+On  failure, It returns NULL, and <u>errno</u> is set to indicate the error.  The contents of the array pointed to  by buf are undefined on error.
+
+To compile and run mycat.c:
+```c
+gcc mypwd.c -o mypwd
+./mypwd
+```
 
 
 
