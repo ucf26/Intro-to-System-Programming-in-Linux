@@ -16,5 +16,6 @@ int main(){
     else {
         printf("path = %s,\n", cwd);
     }
+    return 0;
 }
     

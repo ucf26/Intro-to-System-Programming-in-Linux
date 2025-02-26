@@ -55,7 +55,7 @@ is called after all I/O has been completed, in order to release the file descrip
 It is usually good practice to close unneeded file descriptors explicitly, since this makes our code more readable and reliable in the face of subsequent modifications. Furthermore, file descriptors are a consumable resource, so failure to close a file descriptor could result in a process running out of descriptors. This is a particularly important issue when writing long-lived programs that deal with multiple files, such as shells or network servers.
 
 
-## cat :
+## cat:
 a simple implementation of cat command 
 
 ### Features Added:
@@ -68,7 +68,6 @@ a simple implementation of cat command
     - Print meaningful error messages to stderr using `fprintf()`.
 
 to compile and run mycat.c:
-
 ```c
 gcc mycat.c -o mycat
 ./mycat filename
@@ -90,11 +89,24 @@ char *getcwd(char *buf, size_t size);
 On success, It returns a pointer to a string containing  the  pathname  of the current working directory.
 On  failure, It returns NULL, and <u>errno</u> is set to indicate the error.  The contents of the array pointed to  by buf are undefined on error.
 
-To compile and run mycat.c:
+To compile and run mypwd.c:
 ```c
 gcc mypwd.c -o mypwd
 ./mypwd
 ```
+
+
+## echo :
+echo - display a line of text
+
+it supports `-n` option to print the text without newline.
+
+To compile and run myecho.c:
+```c
+gcc myecho.c -o myecho
+./myecho
+```
+
 
 
 
