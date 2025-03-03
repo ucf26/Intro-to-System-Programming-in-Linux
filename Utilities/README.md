@@ -70,7 +70,7 @@ a simple implementation of cat command
 to compile and run mycat.c:
 ```c
 gcc mycat.c -o mycat
-./mycat filename
+./mycat [filename]
 ```
 
 
@@ -106,6 +106,27 @@ To compile and run myecho.c:
 gcc myecho.c -o myecho
 ./myecho
 ```
+
+## cp:
+
+copies the content of the source to the dist.
+
+To compile and run mycp.c:
+```c
+gcc mycp.c -o mycp
+./mycp [source] [dist]
+```
+
+## mv:
+
+takes the old path and the new path and copies the old file to the new file and then delets the old one.
+
+To compile and run mycp.c:
+```c
+gcc mymv.c -o mymv
+./mymv [source] [dist]
+```
+
 
 
 
